@@ -1,0 +1,78 @@
+/* Website Fonts */
+.inter-inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.noto-serif-notoserif {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+/* Primary-Color */
+.primary-color{
+    color: rgba(0, 0, 0, .5 );
+}
+
+/* Navbar Section  */
+.top-section{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    margin: 30px 150px;
+}
+
+ul li{
+    list-style: none;
+    display: inline;
+}
+.menu-style{
+    font-weight: bold;
+}
+ul li a{
+   margin: 20px;
+   text-decoration: none;
+   color: black;
+}
+/* Banner Section  */
+.banner-section{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    margin: 120px 150px;
+}
+.banner-content h1{
+    font-size: 3rem;
+}
+.header-color{
+    color: #e95a08;
+}
+.banner-text{
+    font-size: 1.35rem;
+}
+.banner-image{
+    width: 570px;
+    height: 410px;
+}
+
+/* Responsive Section  */
+@media screen and (max-width: 430px) {
+  .top-section{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.hidden{
+    display: none;
+}
+.inline{
+    display: grid;
+    grid-template-columns: 70px 70px;
+ }
+}

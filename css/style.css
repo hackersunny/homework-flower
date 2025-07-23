@@ -61,7 +61,40 @@ ul li a{
     height: 410px;
 }
 
-/* Responsive Section  */
+/* Plant Section  */
+.header-text{
+    text-align: center;
+    font-weight: bold;
+    font-size: 3.5rem;
+}
+.plant-content{
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+place-content: center;
+grid-gap: 10px;
+margin: 49px 150px;
+}
+.plant-content > div {
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2.1rem;
+  }
+
+.plant-content > p {
+font-weight: bold;
+font-size: 1rem;
+line-height: 1.2rem;
+ }
+.btn-plant{
+    background-color: #e95a08;
+    border: none;
+    width: 270px;
+    height: 50px;
+    color: white;
+}
+
+
+/* Responsive Section for Top and Banner Section */
 @media screen and (max-width: 430px) {
   .top-section{
     display:flex;
@@ -75,4 +108,22 @@ ul li a{
     display: grid;
     grid-template-columns: 70px 70px;
  }
+ }
+ @media screen and (max-width: 430px) {
+.banner-section{
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
 }
+ .banner-image img{
+    width: 400px;
+    height: 250px;
+ }
+ .banner-content{
+    width: 360px;
+    height: 147px;
+ }
+ }
+
+
+/* Responsive Section for Top and Banner Section */

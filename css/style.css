@@ -28,19 +28,15 @@
     display:flex;
     align-items: center;
     justify-content: space-between;
-    gap: 5px;
-    margin: 30px 150px;
+    gap: .3rem;
+    margin: 1.9rem 9.4rem;
 }
-
 ul li{
     list-style: none;
     display: inline;
 }
-.menu-style{
-    font-weight: bold;
-}
 ul li a{
-   margin: 20px;
+   margin: 1.3rem;
    text-decoration: none;
    color: black;
 }
@@ -50,10 +46,10 @@ ul li a{
     align-items: center;
     justify-content: space-between;
     gap: 5px;
-    margin: 120px 150px;
+    margin: 7.5rem 9.4rem;
 }
 .banner-content h1{
-    font-size: 3rem;
+    font-size: 3.7rem;
 }
 .header-color{
     color: #e95a08;
@@ -62,8 +58,8 @@ ul li a{
     font-size: 1.35rem;
 }
 .banner-image{
-    width: 570px;
-    height: 410px;
+    width: 36rem;
+    height: 26rem;
 }
 
 /* Plant Section  */
@@ -75,14 +71,14 @@ ul li a{
 .header h5{
     text-align: center;
     font-size: 1.4rem;
-    margin: 16px 270px 49px 270px;
+    margin: 1rem 13rem 3.1rem 13rem;
 } 
 .plant-content{
 display: grid;
 grid-template-columns: repeat(4, 1fr);
 place-content: center;
-grid-gap: 10px;
-margin: 49px 150px;
+grid-gap: .63rem;
+margin: 3rem 9rem;
 }
 .plant-content > div {
     text-align: center;
@@ -99,18 +95,68 @@ line-height: 1.2rem;
 .btn-plant{
     background-color: #e95a08;
     border: none;
-    width: 270px;
-    height: 50px;
+    width: 17rem;
+    height: 3.1rem;
     color: white;
 }
 
-/* image gallery css */
-.container {
+/* Challange section */
+
+.container-brand {
   display: flex;
-  gap: 10px;
   align-items: center;
   justify-content: center;
-  margin-bottom: 120px;
+  gap: 2.5rem;
+  padding: 3.12rem;
+  flex-wrap: wrap;
+}
+
+.img-section {
+  position: relative;
+  flex: 1;
+  max-width: 30rem;
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.badge {
+  position: absolute;
+  top: -5.6rem;
+  left: 105%;
+  transform: translateX(-60%);
+  width: 150px;
+  z-index: 10;
+}
+
+.desc-section {
+  flex: 2;
+  max-width: 31rem;
+}
+
+.desc-section h1 {
+  font-size: 3rem;
+  color: #000;
+  margin: 0 0 1.5rem 1.2rem;
+  font-weight: bold;
+}
+
+.desc-section ul{
+  list-style-type: disc;
+  padding-left: 1.25rem;
+  line-height: 1.6;
+}
+
+/* Latest Deals */
+.container-deals {
+  display: flex;
+  gap: .63rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 7.5rem;
 }
 .header-text{
     font-size: 2.3rem;
@@ -119,15 +165,15 @@ line-height: 1.2rem;
 .paragraph{
     font-size: 1.3rem;
     text-align: center;
-    margin: 10px 276px 5px 276px;
+    margin: .63rem 10rem .3rem 10rem;
 }
 
 .image-container{
   display: flex;
-  gap: 20px;
-  max-width: 1140px;
-  height: 390px;
-  margin: 0px 150px 80px 150px;
+  gap: 1.25rem;
+  max-width: 71.25rem;
+  height: 24.38rem;
+  margin: 0rem 9.4rem 5rem 9.4rem;
 }
 
 .left-banners {
@@ -145,8 +191,8 @@ line-height: 1.2rem;
 }
 .banner {
   position: relative;
-  height: 250px;
-  border-radius: 12px;
+  height: 15.6rem;
+  border-radius: .75rem;
   overflow: hidden;
   background-size: cover;
   background-position: center;
@@ -154,6 +200,7 @@ line-height: 1.2rem;
 }
 
 .left-text{
+  font-size: 1.25rem;
   position: absolute;
   left: auto;
   bottom: auto;
@@ -168,10 +215,10 @@ line-height: 1.2rem;
   background-image: url('../assets/deal-ana2.png'); /* replace with your image */
 }
 
-.right-banner {
+.right-banner{
   flex: 2;
   position: relative;
-  border-radius: 12px;
+  border-radius: 0.75rem;
   overflow: hidden;
   background-image: url('../assets/deal-zabo3.png'); /* replace with your image */
   background-size: cover;
@@ -180,6 +227,9 @@ line-height: 1.2rem;
   align-items: center;
   justify-content: center;
   color: white;
+  left: auto;
+  bottom: auto;
+  text-align: center;
 }
 
 .text-content {
@@ -188,13 +238,13 @@ line-height: 1.2rem;
   bottom: auto;
 }
 
-.right-banner{
+/* .right-banner{
   left: auto;
   bottom: auto;
   text-align: center;
-}
+} */
 
-.bloom-text .ana-text {
+.bloom-text, .ana-text {
   font-size: 2rem;
   font-weight: bold;
    line-height: 1rem;
@@ -202,7 +252,7 @@ line-height: 1.2rem;
    height: 100%;
 }
 
-.bloom-text .ana-text span {
+.bloom-text, .ana-text span {
   font-size: 2rem;
 }
 .right-text{
@@ -281,7 +331,7 @@ line-height: 1.2rem;
 
 /* Footer Section */
 
-.footer {
+.footer-content {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2rem;
@@ -341,36 +391,114 @@ line-height: 1.2rem;
 
 
 
-/* Responsive Section for Top and Banner Section */
+/* Responsive Section */
 @media screen and (max-width: 430px) {
-  .top-section{
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+  } 
+  body{
+    width: 74rem;
+  }
+  main {
+   width: 74rem;
+  }
+   .top-section{ 
+    margin: 2rem .5rem;
     display:flex;
     align-items: center;
     justify-content: center;
+    gap: 30rem;
+    margin-right: 5rem;
 }
-.hidden{
+.menu-hide{
     display: none;
 }
-.inline{
-    display: grid;
-    grid-template-columns: 70px 70px;
- }
- }
- @media screen and (max-width: 430px) {
 .banner-section{
     display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content:flex-start;
+    width: 72rem;
 }
- .banner-image img{
-    width: 400px;
-    height: 250px;
+.banner-image img{
+  width: 90%;
  }
  .banner-content{
-    width: 360px;
-    height: 147px;
+width: 74rem;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
  }
+ .text-resize{
+  font-size: 1.5rem;
+  width: 40rem;
+  height: 4.13rem;
+ }
+ .banner-text{
+  margin-top: 4rem;
+  font-size: 1rem;
+  height: 2rem;
+  width: 35rem;
+ } 
+ .header{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+ }
+ .plant-content{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-right: 5rem;
  }
 
+.container-brand{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+ .badge{
+  display: none;
+ }
+.paragraph{
+    font-size: 1rem;
+    text-align: center;
+    width: 21rem;
+    margin: .63rem 17rem .3rem 17rem;
+}
+.image-container{
+  display: grid;
+  grid-template-columns: repeat(3 1fr);
+  gap: 5rem;
+  max-width: 71.25rem;
+  height: 24.38rem;
+  margin: 0rem 9.4rem 30rem 9.4rem;
+}
+.left-text{
+  left: auto;
+  bottom: auto;
+  text-align: center;
+}
+.subscribe-section{
+  margin: 10rem 0rem 2rem 5rem;
+  background-image: url('../assets/news-letter-bg.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  gap: 2rem;
+  padding: 3rem;
+  background-color: #f9fbff;
+  align-items: start;
+}
 
-/* Responsive Section for Top and Banner Section */
+}
